@@ -2,12 +2,12 @@ spring:
   application:
     name: rcs-system
 
-  # MySQL 数据源
+  # PostgreSQL 数据源
   datasource:
-    url: jdbc:mysql://localhost:3306/rcs_system?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
-    username: root
-    password: abc123
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://localhost:5432/rcs_system
+    username: rcs
+    password: rcs
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
